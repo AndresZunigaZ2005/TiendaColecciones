@@ -1,5 +1,6 @@
 package co.edu.uniquindio.tienda.controllers;
 
+import co.edu.uniquindio.tienda.controllerModel.ModelFactoryController;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -9,6 +10,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
 public class RegistroUsuarioController {
+    ModelFactoryController modelFactoryController;
+
 
     @FXML
     private Button btnCancelar;
