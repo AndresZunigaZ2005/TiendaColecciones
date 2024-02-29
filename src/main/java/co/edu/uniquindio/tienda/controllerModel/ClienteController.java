@@ -9,16 +9,16 @@ public class ClienteController implements IClienteControllerService {
 
     @Override
     public Boolean crearCliente(String numeroIdentificacion, String nombre, String direccion) {
-        return null;
+        return modelFactoryController.crearCliente(numeroIdentificacion, nombre, direccion);
     }
 
     @Override
     public Boolean editarCliente(String numeroIdentificacion, String nombre, String direccion) {
-        return null;
+        return modelFactoryController.crearCliente(numeroIdentificacion, nombre, direccion);
     }
 
     @Override
-    public Boolean eliminarCliente(Cliente cliente) {
-        return null;
+    public Boolean eliminarCliente(String numeroIdentificacion, String nombre, String direccion) {
+        return modelFactoryController.crearCliente(numeroIdentificacion, nombre, direccion);
     }
 }

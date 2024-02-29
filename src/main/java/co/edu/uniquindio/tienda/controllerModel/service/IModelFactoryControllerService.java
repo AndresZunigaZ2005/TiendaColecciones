@@ -13,4 +13,7 @@ public interface IModelFactoryControllerService {
     HashSet<String> obtenerCarritoCompras();
     LinkedList<Venta> obtenerHistoricoVentas();
     TreeSet<Producto> obtenerInvetario();
+    Boolean crearCliente(String numeroIdentificacion, String nombre, String direccion);
+    Boolean editarCliente(String numeroIdentificacion, String nombre, String direccion);
+    Boolean eliminarCliente(String numeroIdentificacion, String nombre, String direccion);
 }

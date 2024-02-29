@@ -41,6 +41,21 @@ public class ModelFactoryController implements IModelFactoryControllerService {
         return null;
     }
 
+    @Override
+    public Boolean crearCliente(String numeroIdentificacion, String nombre, String direccion) {
+        return null;
+    }
+
+    @Override
+    public Boolean editarCliente(String numeroIdentificacion, String nombre, String direccion) {
+        return null;
+    }
+
+    @Override
+    public Boolean eliminarCliente(String numeroIdentificacion, String nombre, String direccion) {
+        return null;
+    }
+
     private static class SingletonHolder {
         private final static ModelFactoryController eINSTANCE = new ModelFactoryController();
     }
