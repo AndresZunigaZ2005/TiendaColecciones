@@ -43,7 +43,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.tienda.controllers.DetallesCompraController">
    <children>
       <BorderPane prefHeight="399.0" prefWidth="640.0">
          <top>
@@ -57,23 +57,6 @@
                </children>
             </AnchorPane>
          </top>
-         <right>
-            <AnchorPane prefHeight="339.0" prefWidth="396.0" BorderPane.alignment="CENTER">
-               <children>
-                  <TableView fx:id="tableViewDetalleVenta" layoutX="-1.0" prefHeight="294.0" prefWidth="399.0">
-                    <columns>
-                      <TableColumn fx:id="columnProducto" prefWidth="175.19994497299194" text="Producto" />
-                      <TableColumn fx:id="columnCantidad" prefWidth="64.80007934570312" text="Cantidad" />
-                        <TableColumn fx:id="columnPrecioUnidad" minWidth="0.0" prefWidth="85.5999755859375" text="Precio unidad" />
-                        <TableColumn fx:id="columnSubtotal" prefWidth="71.99995727539061" text="Subtotal" />
-                    </columns>
-                  </TableView>
-                  <Button fx:id="btnActualizar" layoutX="87.0" layoutY="299.0" mnemonicParsing="false" text="Actualizar" />
-                  <Button fx:id="btnEliminar" layoutX="14.0" layoutY="299.0" mnemonicParsing="false" text="Eliminar" />
-                  <Button fx:id="btnContinuar" layoutX="304.0" layoutY="298.0" mnemonicParsing="false" text="Continuar" />
-               </children>
-            </AnchorPane>
-         </right>
          <left>
             <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
@@ -81,10 +64,27 @@
                   <Label fx:id="lblProducto" layoutX="16.0" layoutY="67.0" text="Producto" />
                   <Spinner fx:id="spinnerCantidad" layoutX="16.0" layoutY="214.0" />
                   <Label fx:id="lblCantidad" layoutX="16.0" layoutY="192.0" prefHeight="22.0" prefWidth="48.0" text="Cantidad" />
-                  <Button fx:id="btnAniadirProducto" layoutX="69.0" layoutY="290.0" mnemonicParsing="false" text="Añadir producto" />
+                  <Button fx:id="btnAniadirProducto" layoutX="40.0" layoutY="300.0" mnemonicParsing="false" onKeyPressed="#AniadirProducto" onMouseClicked="#AniadirProducto" text="Añadir producto" />
                </children>
             </AnchorPane>
          </left>
+         <center>
+            <AnchorPane prefHeight="339.0" prefWidth="396.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tableViewDetalleVenta" layoutX="21.0" prefHeight="294.0" prefWidth="399.0">
+                    <columns>
+                      <TableColumn fx:id="columnProducto" prefWidth="175.19994497299194" text="Producto" />
+                      <TableColumn fx:id="columnCantidad" prefWidth="64.80007934570312" text="Cantidad" />
+                        <TableColumn fx:id="columnPrecioUnidad" minWidth="0.0" prefWidth="85.5999755859375" text="Precio unidad" />
+                        <TableColumn fx:id="columnSubtotal" prefWidth="71.99995727539061" text="Subtotal" />
+                    </columns>
+                  </TableView>
+                  <Button fx:id="btnActualizar" layoutX="106.0" layoutY="299.0" mnemonicParsing="false" onKeyPressed="#ActualizarProducto" onMouseClicked="#ActualizarProducto" text="Actualizar" />
+                  <Button fx:id="btnEliminar" layoutX="21.0" layoutY="299.0" mnemonicParsing="false" onKeyPressed="#EliminarProducto" onMouseClicked="#EliminarProducto" text="Eliminar" />
+                  <Button fx:id="btnContinuar" layoutX="351.0" layoutY="299.0" mnemonicParsing="false" text="Continuar" />
+               </children>
+            </AnchorPane>
+         </center>
       </BorderPane>
    </children>
 </VBox>

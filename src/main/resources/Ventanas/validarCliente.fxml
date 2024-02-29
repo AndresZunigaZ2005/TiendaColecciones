@@ -39,7 +39,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="218.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="218.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.tienda.controllers.ValidarClienteController">
    <children>
       <AnchorPane prefHeight="214.0" prefWidth="384.0">
          <children>
@@ -53,14 +53,14 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <TextField fx:id="txtFieldNumeroIdentificacion" layoutX="263.0" layoutY="67.0" />
-            <Button fx:id="btnValidar" layoutX="217.0" layoutY="107.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="77.0" text="Validar" />
-            <Button fx:id="btnRegistrarCliente" layoutX="263.0" layoutY="173.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Registrar Cliente">
+            <TextField fx:id="txtFieldNumeroIdentificacion" layoutX="256.0" layoutY="68.0" prefHeight="25.0" prefWidth="157.0" />
+            <Button fx:id="btnValidar" layoutX="211.0" layoutY="107.0" mnemonicParsing="false" onKeyPressed="#ValidarCliente" onMouseClicked="#ValidarCliente" prefHeight="33.0" prefWidth="77.0" text="Validar" />
+            <Button fx:id="btnRegistrarCliente" layoutX="256.0" layoutY="174.0" mnemonicParsing="false" onKeyPressed="#AbrirPanelRegistroCliente" onMouseClicked="#AbrirPanelRegistroCliente" prefHeight="26.0" prefWidth="110.0" text="Registrar Cliente">
                <font>
                   <Font size="9.0" />
                </font>
             </Button>
-            <Label fx:id="lblNoEstaRegistrado" layoutX="176.0" layoutY="182.0" text="¿No esta registrado?">
+            <Label fx:id="lblNoEstaRegistrado" layoutX="160.0" layoutY="180.0" text="¿No esta registrado?">
                <font>
                   <Font size="9.0" />
                </font>

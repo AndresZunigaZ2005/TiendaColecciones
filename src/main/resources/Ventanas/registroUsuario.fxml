@@ -40,7 +40,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.tienda.controllers.RegistroUsuarioController">
    <children>
       <BorderPane prefHeight="400.0" prefWidth="548.0">
          <top>
@@ -53,20 +53,20 @@
          <center>
             <AnchorPane fx:id="contenedorPrincipal" prefHeight="367.0" prefWidth="640.0" BorderPane.alignment="CENTER">
                <children>
-                  <TextField fx:id="txtFieldNombre" layoutX="210.0" layoutY="32.0" prefHeight="32.0" prefWidth="222.0" />
-                  <TextField fx:id="txtFieldNumeroIdentificacion" layoutX="210.0" layoutY="111.0" prefHeight="32.0" prefWidth="222.0" />
-                  <Label fx:id="lblNombre" layoutX="210.0" layoutY="14.0" text="Nombre" />
-                  <Label fx:id="lblNumeroIdentificacion" layoutX="210.0" layoutY="93.0" text="Numero identificacion" />
-                  <Label fx:id="lblDireccion" layoutX="207.0" layoutY="170.0" text="Direccion" />
-                  <TextField fx:id="txtFieldDireccion" layoutX="207.0" layoutY="188.0" prefHeight="83.0" prefWidth="224.0" />
+                  <TextField fx:id="txtFieldNombre" layoutX="217.0" layoutY="31.0" prefHeight="32.0" prefWidth="222.0" />
+                  <TextField fx:id="txtFieldNumeroIdentificacion" layoutX="217.0" layoutY="110.0" prefHeight="32.0" prefWidth="222.0" />
+                  <Label fx:id="lblNombre" layoutX="219.0" layoutY="14.0" text="Nombre" />
+                  <Label fx:id="lblNumeroIdentificacion" layoutX="217.0" layoutY="93.0" text="Numero identificacion" />
+                  <Label fx:id="lblDireccion" layoutX="216.0" layoutY="170.0" text="Direccion" />
+                  <TextField fx:id="txtFieldDireccion" layoutX="216.0" layoutY="187.0" prefHeight="83.0" prefWidth="224.0" />
                </children>
             </AnchorPane>
          </center>
          <bottom>
             <AnchorPane prefHeight="34.0" prefWidth="640.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="btnRegistrar" layoutX="334.0" layoutY="1.0" mnemonicParsing="false" text="Registrar" />
-                  <Button fx:id="btnCancelar" layoutX="255.0" layoutY="1.0" mnemonicParsing="false" text="Cancelar" />
+                  <Button fx:id="btnRegistrar" layoutX="344.0" layoutY="1.0" mnemonicParsing="false" onKeyPressed="#RegistrarUsuario" onMouseClicked="#RegistrarUsuario" text="Registrar" />
+                  <Button fx:id="btnCancelar" layoutX="241.0" layoutY="1.0" mnemonicParsing="false" text="Cancelar" />
                </children>
             </AnchorPane>
          </bottom>
