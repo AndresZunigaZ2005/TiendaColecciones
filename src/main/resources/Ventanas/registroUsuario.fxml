@@ -65,8 +65,8 @@
          <bottom>
             <AnchorPane prefHeight="34.0" prefWidth="640.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="btnRegistrar" layoutX="344.0" layoutY="1.0" mnemonicParsing="false" onKeyPressed="#RegistrarUsuario" onMouseClicked="#RegistrarUsuario" text="Registrar" />
-                  <Button fx:id="btnCancelar" layoutX="241.0" layoutY="1.0" mnemonicParsing="false" text="Cancelar" />
+                  <Button fx:id="btnRegistrar" layoutX="344.0" layoutY="1.0" mnemonicParsing="false" onAction="#RegistrarUsuario" text="Registrar" />
+                  <Button fx:id="btnCancelar" layoutX="241.0" layoutY="1.0" mnemonicParsing="false" onAction="#cerrarVentana" text="Cancelar" />
                </children>
             </AnchorPane>
          </bottom>

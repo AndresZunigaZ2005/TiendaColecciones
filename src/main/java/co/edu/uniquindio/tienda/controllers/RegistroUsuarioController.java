@@ -1,16 +1,34 @@
 package co.edu.uniquindio.tienda.controllers;
 
 import co.edu.uniquindio.tienda.controllerModel.ModelFactoryController;
+import co.edu.uniquindio.tienda.exceptions.ExistenciaClienteException;
+import co.edu.uniquindio.tienda.exceptions.RegistroClienteException;
+import co.edu.uniquindio.tienda.main.Main;
+import co.edu.uniquindio.tienda.model.Tienda;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
-public class RegistroUsuarioController {
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class RegistroUsuarioController implements Initializable {
     ModelFactoryController modelFactoryController;
+
+    Tienda tienda= Tienda.getInstance();
 
 
     @FXML
@@ -45,7 +63,44 @@ public class RegistroUsuarioController {
 
     @FXML
     void RegistrarUsuario(MouseEvent event) {
-
+        String nombre = txtFieldNombre.getText();
+        String identificacion = txtFieldNumeroIdentificacion.getText();
+        String direccion = txtFieldDireccion.getText();
+        try {
+            tienda.registrarCliente(nombre, identificacion, direccion);
+        } catch (ExistenciaClienteException | RegistroClienteException e) {
+            //throw new RuntimeException(e);
+            ////TODO Poner una alerta
+        }
     }
 
+    @FXML
+    void cerrarVentana(ActionEvent event) throws IOException {
+        //TODO terminar la conexión de ventanas
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("OtraVentana.fxml"));
+        Parent root = loader.load();
+
+        // Crear una nueva escena
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Nueva Ventana");
+
+        // Mostrar la nueva ventana
+        stage.show();
+
+        // Cerrar la ventana actual
+        Stage ventanaActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        ventanaActual.close();
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        btnRegistrar.addEventHandler(KeyEvent.KEY_PRESSED, event -> {
+            if (event.getCode() == KeyCode.ENTER) {
+                // Si la tecla presionada es Enter, ejecuta el botón
+                btnRegistrar.fire();
+            }
+        });
+    }
 }

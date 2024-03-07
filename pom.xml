@@ -21,7 +21,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>co.edu.uniquindio.pr3.main.Main</mainClass>
+                    <mainClass>co.edu.uniquindio.tienda.main.Main</mainClass>
                 </configuration>
             </plugin>
         </plugins>
