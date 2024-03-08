@@ -62,16 +62,17 @@ public class RegistroUsuarioController implements Initializable {
     private TextField txtFieldNumeroIdentificacion;
 
     @FXML
-    void RegistrarUsuario(MouseEvent event) {
+    void RegistrarUsuario(ActionEvent event) {
         String nombre = txtFieldNombre.getText();
         String identificacion = txtFieldNumeroIdentificacion.getText();
         String direccion = txtFieldDireccion.getText();
-        try {
+
+        /*try {
             tienda.registrarCliente(nombre, identificacion, direccion);
         } catch (ExistenciaClienteException | RegistroClienteException e) {
-            //throw new RuntimeException(e);
-            ////TODO Poner una alerta
-        }
+            // Puedes manejar la excepción aquí o mostrar una alerta
+            e.printStackTrace(); // Imprime el seguimiento de la pila para ayudar a identificar el problema
+        }*/
     }
 
     @FXML
@@ -96,11 +97,6 @@ public class RegistroUsuarioController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        btnRegistrar.addEventHandler(KeyEvent.KEY_PRESSED, event -> {
-            if (event.getCode() == KeyCode.ENTER) {
-                // Si la tecla presionada es Enter, ejecuta el botón
-                btnRegistrar.fire();
-            }
-        });
+
     }
 }

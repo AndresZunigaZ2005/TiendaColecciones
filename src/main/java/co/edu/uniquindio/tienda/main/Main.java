@@ -20,6 +20,7 @@ public class Main extends Application{
             primaryStage.setScene(scene);
             primaryStage.setTitle("Tienda Colecciones UQ");
             primaryStage.show();
+            primaryStage.getIcons().add(new Image("/Imagenes/tienda.jpg"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
