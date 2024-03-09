@@ -75,15 +75,6 @@
                         <Button fx:id="btnBuscarIDCliente" layoutX="481.0" layoutY="62.0" mnemonicParsing="false" onAction="#buscarVentaPorIDCliente" text="Buscar por ID cliente" />
                         <DatePicker fx:id="datePickerFechaVenta" layoutX="40.0" layoutY="23.0" />
                         <Line endX="542.4000244140625" layoutX="116.0" layoutY="404.0" startX="-100.0" />
-                        <TableView layoutX="50.0" layoutY="438.0" prefHeight="162.0" prefWidth="441.0">
-                          <columns>
-                            <TableColumn fx:id="tcIDProducto" prefWidth="89.59998321533203" text="ID producto" />
-                            <TableColumn fx:id="tcNombreProducto" prefWidth="124.00006103515625" text="Nombre producto" />
-                              <TableColumn fx:id="tcPrecioUnidad" minWidth="0.0" prefWidth="74.39996337890625" text="P/U" />
-                              <TableColumn fx:id="tcCantidad" minWidth="0.0" prefWidth="84.79998779296875" text="Cantidad" />
-                              <TableColumn fx:id="tcSubtotal" prefWidth="69.60003662109375" text="Subtotal" />
-                          </columns>
-                        </TableView>
                         <Label fx:id="lblDetalleVenta" layoutX="267.0" layoutY="404.0" text="Detalle venta">
                            <font>
                               <Font size="23.0" />
@@ -99,6 +90,15 @@
                         <Button fx:id="btnregresar" layoutX="313.0" layoutY="675.0" mnemonicParsing="false" onAction="#irVentanaAnterior" text="Regresar" />
                         <Line endX="542.4000244140625" layoutX="116.0" layoutY="646.0" startX="-100.0" />
                         <Button fx:id="btnVerDetalleVenta" layoutX="280.0" layoutY="371.0" mnemonicParsing="false" onAction="#verDetalleVentaSeleccionado" text="Ver detalle venta" />
+                        <TableView fx:id="tableViewDetalleVenta" layoutX="50.0" layoutY="438.0" prefHeight="162.0" prefWidth="441.0">
+                          <columns>
+                            <TableColumn fx:id="tcIDProducto" prefWidth="89.59998321533203" text="ID producto" />
+                            <TableColumn fx:id="tcNombreProducto" prefWidth="124.00006103515625" text="Nombre producto" />
+                              <TableColumn fx:id="tcPrecioUnidad" minWidth="0.0" prefWidth="74.39996337890625" text="P/U" />
+                              <TableColumn fx:id="tcCantidad" minWidth="0.0" prefWidth="84.79998779296875" text="Cantidad" />
+                              <TableColumn fx:id="tcSubtotal" prefWidth="69.60003662109375" text="Subtotal" />
+                          </columns>
+                        </TableView>
                      </children>
                   </AnchorPane>
                </bottom>
