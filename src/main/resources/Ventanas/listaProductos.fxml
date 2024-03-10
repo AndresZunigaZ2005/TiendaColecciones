@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  Copyright (c) 2015, 2019, Gluon and/or its affiliates.
+  All rights reserved. Use is subject to license terms.
+
+  This file is available and licensed under the following license:
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions
+  are met:
+
+  - Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+  - Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the distribution.
+  - Neither the name of Oracle Corporation nor the names of its
+    contributors may be used to endorse or promote products derived
+    from this software without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+  "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+  A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+  OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+  THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+  OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="602.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="618.0" prefWidth="773.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" text="Drag components from Library here…" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <BorderPane layoutX="-1.0" layoutY="-2.0" prefHeight="618.0" prefWidth="784.0">
+               <top>
+                  <Label fx:id="lblListaDeProductos" text="Lista de productos" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+               </top>
+               <right>
+                  <AnchorPane prefHeight="582.0" prefWidth="774.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label fx:id="lblBuscarPorNombre" layoutX="36.0" layoutY="26.0" text="Buscar por nombre:" />
+                        <Label fx:id="lblBUscarPorID" layoutX="36.0" layoutY="102.0" text="Buscar por ID" />
+                        <Label fx:id="lblCantidad" layoutX="36.0" layoutY="182.0" text="Cantidad" />
+                        <TextField fx:id="txtBuscarPorNombre" layoutX="36.0" layoutY="44.0" />
+                        <TextField fx:id="txtBuscarPorID" layoutX="36.0" layoutY="120.0" />
+                        <TextField fx:id="txtCantidad" layoutX="36.0" layoutY="200.0" />
+                        <Button fx:id="btnAniadir" layoutX="88.0" layoutY="250.0" mnemonicParsing="false" text="Añadir" />
+                        <TableView layoutX="214.0" layoutY="16.0" prefHeight="260.0" prefWidth="546.0">
+                          <columns>
+                            <TableColumn fx:id="tcIdProductoVenta" prefWidth="163.99998474121094" text="ID" />
+                            <TableColumn fx:id="tcNombreProductoVenta" prefWidth="266.4000244140625" text="Nombre producto" />
+                              <TableColumn fx:id="tcPrecioUnidadVenta" minWidth="0.0" prefWidth="114.39999999999998" text="Precio unidad" />
+                          </columns>
+                        </TableView>
+                        <Line endX="645.7999877929688" layoutX="115.0" layoutY="312.0" startX="-100.0" />
+                        <TableView layoutX="36.0" layoutY="336.0" prefHeight="200.0" prefWidth="450.0">
+                          <columns>
+                            <TableColumn fx:id="tcIdProductoAnadido" prefWidth="82.39999771118164" text="ID" />
+                            <TableColumn fx:id="tcNombreProductoAnadido" prefWidth="152.7999038696289" text="Nombre producto" />
+                              <TableColumn fx:id="tcPrecioUnidadAnadido" prefWidth="63.20001220703125" text="P/U" />
+                              <TableColumn fx:id="tcCantidadAnadido" prefWidth="65.5999755859375" text="Cantidad" />
+                              <TableColumn fx:id="tcSubtotal" prefWidth="88.800048828125" text="Subtotal" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="btnActualizar" layoutX="140.0" layoutY="543.0" mnemonicParsing="false" text="Actuaizar" />
+                        <Button fx:id="btnEliminar" layoutX="329.0" layoutY="543.0" mnemonicParsing="false" text="Eliminar" />
+                        <Label fx:id="lblTotalVenta" layoutX="566.0" layoutY="370.0" text="Total venta:" />
+                        <Button fx:id="btnGenerarVenta" layoutX="566.0" layoutY="464.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="174.0" text="Generar Venta">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="txtTotalVenta" layoutX="566.0" layoutY="388.0" />
+                     </children>
+                  </AnchorPane>
+               </right>
+            </BorderPane>
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
