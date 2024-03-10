@@ -70,11 +70,16 @@ public class RegistroUsuarioController implements Initializable {
 
         try {
             tienda.registrarCliente(nombre, identificacion, direccion);
-        } catch (ExistenciaClienteException | RegistroClienteException e) {
-            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Confirmación");
             alert.setHeaderText(null);
             alert.setContentText("El usuario ha sido creada correctamente");
+            alert.showAndWait();
+        } catch (ExistenciaClienteException | RegistroClienteException e) {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText(e.getMessage());
             alert.showAndWait();
         }
     }
@@ -82,7 +87,7 @@ public class RegistroUsuarioController implements Initializable {
     @FXML
     void cerrarVentana(ActionEvent event) throws IOException {
         //TODO terminar la conexión de ventanas
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("OtraVentana.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ventanas/validarCliente.fxml"));
         Parent root = loader.load();
 
         // Crear una nueva escena
