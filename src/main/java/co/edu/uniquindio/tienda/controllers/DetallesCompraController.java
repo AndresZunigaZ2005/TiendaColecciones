@@ -1,17 +1,24 @@
 package co.edu.uniquindio.tienda.controllers;
 
 import co.edu.uniquindio.tienda.controllerModel.ModelFactoryController;
+import co.edu.uniquindio.tienda.model.DetalleVenta;
+import co.edu.uniquindio.tienda.model.Producto;
+import co.edu.uniquindio.tienda.model.Tienda;
+import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon;
+import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.fxml.Initializable;
+import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 
-public class DetallesCompraController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class DetallesCompraController implements Initializable {
+
+    //TODO terminar la ventana, problema al iniciar el comboBox
     ModelFactoryController modelFactoryController;
 
     @FXML
@@ -27,19 +34,22 @@ public class DetallesCompraController {
     private Button btnEliminar;
 
     @FXML
-    private ComboBox<?> cBoxProductos;
+    private Button btnIrAtras;
 
     @FXML
-    private TableColumn<?, ?> columnCantidad;
+    private ComboBox<Producto> cBoxProductos;
 
     @FXML
-    private TableColumn<?, ?> columnPrecioUnidad;
+    private TableColumn<DetalleVenta, Integer> columnCantidad;
 
     @FXML
-    private TableColumn<?, ?> columnProducto;
+    private TableColumn<DetalleVenta,Double> columnPrecioUnidad;
 
     @FXML
-    private TableColumn<?, ?> columnSubtotal;
+    private TableColumn<DetalleVenta, String> columnProducto;
+
+    @FXML
+    private TableColumn<DetalleVenta, Double> columnSubtotal;
 
     @FXML
     private Label lblCantidad;
@@ -51,10 +61,12 @@ public class DetallesCompraController {
     private Label lblProductosAComprar;
 
     @FXML
-    private Spinner<?> spinnerCantidad;
+    private Spinner<Integer> spinnerCantidad;
 
     @FXML
-    private TableView<?> tableViewDetalleVenta;
+    private TableView<DetalleVenta> tableViewDetalleVenta;
+
+    private Tienda tienda = Tienda.getInstance();
 
     @FXML
     void ActualizarProducto(MouseEvent event) {
@@ -71,5 +83,30 @@ public class DetallesCompraController {
 
     }
 
+    @FXML
+    void irAtras(ActionEvent event){
+
+    }
+
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
+        FontAwesomeIconView icon = new FontAwesomeIconView(FontAwesomeIcon.ARROW_LEFT);
+        icon.setSize("2em");
+        btnIrAtras.setGraphic(icon);
+
+
+
+        //cBoxProductos.getItems().addAll(tienda.getLstProducto().values());
+
+
+        // Crear un SpinnerValueFactory con los límites del 1 al 100
+        SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 100);
+
+        // Establecer el valor inicial del Spinner
+        valueFactory.setValue(1); // Puedes establecer cualquier valor inicial que desees
+
+        // Asignar el SpinnerValueFactory al Spinner
+        spinnerCantidad.setValueFactory(valueFactory);
+    }
 }
 
