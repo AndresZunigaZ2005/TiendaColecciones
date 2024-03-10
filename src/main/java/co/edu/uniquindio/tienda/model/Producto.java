@@ -16,5 +16,4 @@ public class Producto {
     private Integer cantidad;
 
 
-
 }

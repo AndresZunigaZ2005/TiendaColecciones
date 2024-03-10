@@ -44,7 +44,12 @@ public class Tienda {
             LOGGER.log(Level.SEVERE, e.getMessage());
         }
         LOGGER.log(Level.INFO, "Se crea una nueva instanica de Tienda");
-
+        this.lstCliente = new HashMap<>();
+        this.lstProducto= new HashMap<>();
+        this.lstVenta= new ArrayList<>();
+        this.lstCarritoCompra= new HashSet<>();
+        this.historicoventas= new LinkedList<>();
+        this.inventario= new TreeSet<>();
     }
 
     public static Tienda getInstance() {

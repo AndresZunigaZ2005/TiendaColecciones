@@ -12,6 +12,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -67,18 +68,26 @@ public class RegistroUsuarioController implements Initializable {
         String identificacion = txtFieldNumeroIdentificacion.getText();
         String direccion = txtFieldDireccion.getText();
 
-        /*try {
+        try {
             tienda.registrarCliente(nombre, identificacion, direccion);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Confirmación");
+            alert.setHeaderText(null);
+            alert.setContentText("El usuario ha sido creada correctamente");
+            alert.showAndWait();
         } catch (ExistenciaClienteException | RegistroClienteException e) {
-            // Puedes manejar la excepción aquí o mostrar una alerta
-            e.printStackTrace(); // Imprime el seguimiento de la pila para ayudar a identificar el problema
-        }*/
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Error");
+            alert.setHeaderText(null);
+            alert.setContentText(e.getMessage());
+            alert.showAndWait();
+        }
     }
 
     @FXML
     void cerrarVentana(ActionEvent event) throws IOException {
         //TODO terminar la conexión de ventanas
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("OtraVentana.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ventanas/validarCliente.fxml"));
         Parent root = loader.load();
 
         // Crear una nueva escena
