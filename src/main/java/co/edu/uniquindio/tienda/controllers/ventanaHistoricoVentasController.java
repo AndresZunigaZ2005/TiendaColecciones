@@ -143,7 +143,7 @@ public class ventanaHistoricoVentasController implements Initializable {
     @FXML
     void irVentanaAnterior(ActionEvent event) throws IOException {
         //TODO terminar la conexión de ventanas
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("OtraVentana.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ventanas/ventanaInventario.fxml"));
         Parent root = loader.load();
 
         // Crear una nueva escena

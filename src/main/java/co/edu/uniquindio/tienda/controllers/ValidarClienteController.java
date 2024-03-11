@@ -20,8 +20,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class ValidarClienteController {
+
     ModelFactoryController modelFactoryController;
 
+
+    @FXML
+    private  Button btnAdministrador;
 
     @FXML
     private Button btnRegistrarCliente;
@@ -67,14 +71,14 @@ public class ValidarClienteController {
         //TODO terminar conexión ventana, tiene que llevar a comprar productos
         try {
             if(tienda.obtenerCliente(txtFieldNumeroIdentificacion.getText())!=null){
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ventanas/registroUsuario.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ventanas/listaProductos.fxml"));
                 Parent root = loader.load();
 
                 // Crear una nueva escena
                 Scene scene = new Scene(root);
                 Stage stage = new Stage();
                 stage.setScene(scene);
-                stage.setTitle("Nueva Ventana");
+                stage.setTitle("Lista De Productos");
 
                 // Mostrar la nueva ventana
                 stage.show();
@@ -90,6 +94,26 @@ public class ValidarClienteController {
             alert.setContentText(e.getMessage());
             alert.showAndWait();
         }
+    }
+
+    @FXML
+    void validarAdministrador(ActionEvent event) throws IOException
+    {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ventanas/ventanaInventario.fxml"));
+        Parent root = loader.load();
+
+        // Crear una nueva escena
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.setTitle("Ventana inventario");
+
+        // Mostrar la nueva ventana
+        stage.show();
+
+        // Cerrar la ventana actual
+        Stage ventanaActual = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        ventanaActual.close();
     }
 }
 

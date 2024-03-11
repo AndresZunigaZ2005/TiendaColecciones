@@ -10,3 +10,233 @@ mar. 10, 2024 10:31:47 A.�M. co.edu.uniquindio.tienda.model.Tienda <init>
 INFO: Se crea una nueva instanica de Tienda
 mar. 10, 2024 10:33:02 A.�M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
 INFO: El cliente de identificaci�n a se ha registrado
+mar 10, 2024 4:51:43 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 4:51:59 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación 1035972060 se ha registrado
+mar 10, 2024 4:58:56 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 4:59:20 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación 1035 se ha registrado
+mar 10, 2024 5:02:47 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 5:02:55 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación 1 se ha registrado
+mar 10, 2024 5:03:06 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación ded se ha registrado
+mar 10, 2024 5:03:57 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación 95 se ha registrado
+mar 10, 2024 5:04:55 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 5:21:17 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 5:22:04 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 5:28:23 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 5:54:01 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:00:19 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:00:42 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:01:30 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:02:57 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:03:30 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:05:17 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:06:49 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:16:20 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:18:47 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:20:47 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:22:00 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:24:31 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:27:01 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:29:32 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:30:22 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 6:33:10 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:10:08 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:10:08 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: src\main\resources\persistencia\clientes.ser (El sistema no puede encontrar la ruta especificada)
+mar 10, 2024 7:10:08 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar la ruta especificada)
+mar 10, 2024 7:10:08 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar la ruta especificada)
+mar 10, 2024 7:10:08 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar la ruta especificada)
+mar 10, 2024 7:10:08 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar la ruta especificada)
+mar 10, 2024 7:10:27 P. M. co.edu.uniquindio.tienda.model.Tienda escribirCliente
+SEVERE: src\main\resources\persistencia\clientes.ser (El sistema no puede encontrar la ruta especificada)
+mar 10, 2024 7:10:27 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación 1035 se ha registrado
+mar 10, 2024 7:10:57 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:10:57 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: src\main\resources\persistencia\clientes.ser (El sistema no puede encontrar la ruta especificada)
+mar 10, 2024 7:10:57 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar la ruta especificada)
+mar 10, 2024 7:10:57 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar la ruta especificada)
+mar 10, 2024 7:10:57 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar la ruta especificada)
+mar 10, 2024 7:10:57 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar la ruta especificada)
+mar 10, 2024 7:13:01 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:13:01 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: null
+mar 10, 2024 7:13:01 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:13:01 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:13:01 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:13:01 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:13:09 P. M. co.edu.uniquindio.tienda.model.Tienda escribirCliente
+SEVERE: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:13:09 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación 1035 se ha registrado
+mar 10, 2024 7:13:36 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:13:36 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: writing aborted; java.io.NotSerializableException: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:13:36 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:13:36 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:13:36 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:13:36 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:13:58 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:13:58 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: writing aborted; java.io.NotSerializableException: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:13:58 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:13:58 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:13:58 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:13:58 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:14:06 P. M. co.edu.uniquindio.tienda.model.Tienda escribirCliente
+SEVERE: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:14:06 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación 1 se ha registrado
+mar 10, 2024 7:14:17 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:14:17 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: writing aborted; java.io.NotSerializableException: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:14:17 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:14:17 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:14:17 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:14:17 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:17:20 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:17:20 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: writing aborted; java.io.NotSerializableException: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:17:20 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:17:20 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:17:20 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:17:20 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:17:28 P. M. co.edu.uniquindio.tienda.model.Tienda escribirCliente
+SEVERE: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:17:28 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación 1035 se ha registrado
+mar 10, 2024 7:18:43 P. M. co.edu.uniquindio.tienda.model.Tienda escribirCliente
+SEVERE: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:18:43 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación 2 se ha registrado
+mar 10, 2024 7:19:56 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:19:56 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: writing aborted; java.io.NotSerializableException: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:19:56 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:19:56 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:19:56 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:19:56 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:30:49 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:30:49 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: writing aborted; java.io.NotSerializableException: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:30:49 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:30:49 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:30:49 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:30:49 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:31:16 P. M. co.edu.uniquindio.tienda.model.Tienda escribirCliente
+SEVERE: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:31:16 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación 1 se ha registrado
+mar 10, 2024 7:31:30 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:31:30 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: writing aborted; java.io.NotSerializableException: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:31:30 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:31:30 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:31:30 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:31:30 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:35:37 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:35:37 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: writing aborted; java.io.NotSerializableException: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:35:37 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:35:37 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:35:37 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:35:37 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:40:43 P. M. co.edu.uniquindio.tienda.model.Tienda <init>
+INFO: Se crea una nueva instanica de Tienda
+mar 10, 2024 7:40:43 P. M. co.edu.uniquindio.tienda.model.Tienda leerClienteSerializable
+SEVERE: writing aborted; java.io.NotSerializableException: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:40:43 P. M. co.edu.uniquindio.tienda.model.Tienda leerProductoSerializable
+SEVERE: src\main\resources\persistencia\productos.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:40:43 P. M. co.edu.uniquindio.tienda.model.Tienda leerVentaSerializable
+SEVERE: src\main\resources\persistencia\ventas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:40:43 P. M. co.edu.uniquindio.tienda.model.Tienda leerHistoricoeSerializable
+SEVERE: src\main\resources\persistencia\historicoVentas.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:40:43 P. M. co.edu.uniquindio.tienda.model.Tienda leerInventarioSerializable
+SEVERE: src\main\resources\persistencia\inventario.ser (El sistema no puede encontrar el archivo especificado)
+mar 10, 2024 7:40:51 P. M. co.edu.uniquindio.tienda.model.Tienda escribirCliente
+SEVERE: co.edu.uniquindio.tienda.model.Cliente
+mar 10, 2024 7:40:51 P. M. co.edu.uniquindio.tienda.model.Tienda registrarCliente
+INFO: El cliente de identificación 1 se ha registrado

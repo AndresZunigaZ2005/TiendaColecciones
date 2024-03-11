@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="426.0" prefWidth="566.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.tienda.controllers.ventanaInventarioController">
    <center>
       <AnchorPane prefHeight="390.0" prefWidth="566.0" BorderPane.alignment="CENTER">
          <children>
@@ -23,13 +17,14 @@
               </columns>
             </TableView>
             <Button fx:id="btnEliminarProducto" layoutX="426.0" layoutY="310.0" mnemonicParsing="false" text="Eliminar producto" />
-            <Button fx:id="btnAnadirProducto" layoutX="42.0" layoutY="310.0" mnemonicParsing="false" text="Añadir Producto" />
-            <Button fx:id="btnActualizarProducto" layoutX="230.0" layoutY="310.0" mnemonicParsing="false" text="Actualizar producto" />
+            <Button fx:id="btnAnadirProducto" layoutX="42.0" layoutY="310.0" mnemonicParsing="false" onAction="#anadirProducto" text="Añadir Producto" />
+            <Button fx:id="btnActualizarProducto" layoutX="230.0" layoutY="310.0" mnemonicParsing="false" onAction="#irActualizarProducto" text="Actualizar producto" />
             <Button fx:id="btnBuscarPorCodigo" layoutX="135.0" layoutY="30.0" mnemonicParsing="false" text="Buscar por codigo" />
             <Button fx:id="btnBuscarPorNombre" layoutX="315.0" layoutY="30.0" mnemonicParsing="false" text="Buscar por nombre" />
             <TextField fx:id="txtBuscarPorCodigo" layoutX="135.0" layoutY="59.0" />
             <TextField fx:id="txtBuscarPorNombre" layoutX="315.0" layoutY="59.0" />
-            <Button fx:id="btnRegresar" layoutX="258.0" layoutY="361.0" mnemonicParsing="false" text="Regresar" />
+            <Button fx:id="btnRegresar" layoutX="258.0" layoutY="361.0" mnemonicParsing="false" onAction="#regresarVentana" text="Regresar" />
+            <Button fx:id="btnHistoricoVentas" layoutX="401.0" layoutY="362.0" mnemonicParsing="false" onAction="#irHistoricoVentas" prefHeight="26.0" prefWidth="110.0" text="Historico de ventas" />
          </children>
       </AnchorPane>
    </center>

@@ -32,14 +32,11 @@
   OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
-<?import javafx.scene.control.Button?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox prefHeight="218.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.tienda.controllers.ValidarClienteController">
+<VBox prefHeight="218.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.tienda.controllers.ValidarClienteController">
    <children>
       <AnchorPane prefHeight="214.0" prefWidth="384.0">
          <children>
@@ -65,6 +62,11 @@
                   <Font size="9.0" />
                </font>
             </Label>
+            <Button fx:id="btnAdministrador" layoutX="373.0" layoutY="173.0" mnemonicParsing="false" onAction="#validarAdministrador" onMouseClicked="#validarAdministrador" prefHeight="26.0" prefWidth="110.0" text="¿Administrador?">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>

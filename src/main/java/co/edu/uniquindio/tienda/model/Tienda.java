@@ -1,6 +1,7 @@
 package co.edu.uniquindio.tienda.model;
 
 import co.edu.uniquindio.tienda.exceptions.*;
+import co.edu.uniquindio.tienda.utils.ArchivoUtils;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,6 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
+import co.edu.uniquindio.tienda.utils.ArchivoUtils.*;
 @Data
 @Builder
 @AllArgsConstructor
@@ -35,6 +37,8 @@ public class Tienda {
     private static Tienda tienda;
 
 
+
+
     private Tienda(){
         try {
             FileHandler fh = new FileHandler("logs.log", true);
@@ -50,6 +54,12 @@ public class Tienda {
         this.lstCarritoCompra= new HashSet<>();
         this.historicoventas= new LinkedList<>();
         this.inventario= new TreeSet<>();
+
+        leerClienteSerializable();
+        leerProductoSerializable();
+        leerVentaSerializable();
+        leerHistoricoeSerializable();
+        leerInventarioSerializable();
     }
 
     public static Tienda getInstance() {
@@ -83,6 +93,7 @@ public class Tienda {
                     .nombre(nombre)
                     .direccion(direccion)
                     .build());
+            escribirCliente();
             LOGGER.log(Level.INFO, "El cliente de identificación "+numeroIdentificacion+" se ha registrado");
         }
     }
@@ -138,6 +149,7 @@ public class Tienda {
         else
         {
             lstCliente.remove(numeroIdentificacion);
+            escribirCliente();
             LOGGER.log(Level.WARNING, "Se ha eliminado el cliente de identificación "+numeroIdentificacion);
         }
     }
@@ -167,6 +179,7 @@ public class Tienda {
                     .cantidad(cantidad)
                     .build();
             lstProducto.put(codigo, nuevoProducto);
+            escribirProducto();
             LOGGER.log(Level.INFO, "El producto de codigo "+codigo+" se ha sumado a la ");
         }
             else{
@@ -230,6 +243,7 @@ public class Tienda {
     public void eliminarProducto(String codigo) throws ExistenciaProductoException {
         if(lstProducto.containsKey(codigo)){
             lstProducto.remove(codigo);
+            escribirProducto();
             LOGGER.log(Level.WARNING, "El producto "+codigo+" se ha eliminado");
         }
         throw new ExistenciaProductoException("Error, el producto no existe");
@@ -269,6 +283,7 @@ public class Tienda {
                     .total(total)
                     .build();
             lstVenta.add(venta);
+            escribirVenta();
             LOGGER.log(Level.INFO, "La venta "+codigo+" se ha creado");
         }
     }
@@ -305,6 +320,7 @@ public class Tienda {
         else
         {
             lstVenta.remove(obtenerIndiceArrayListVenta(codigo));
+            escribirVenta();
             LOGGER.log(Level.WARNING, "La venta "+codigo+" se ha eliminado");
         }
     }
@@ -327,6 +343,7 @@ public class Tienda {
     }
 
 
+
     /**
      * Metodo para agregar una venta al historico de ventas
      * @param venta
@@ -341,6 +358,7 @@ public class Tienda {
         else
         {
             historicoventas.add(venta);
+            escribirHistoricoVentas();
             LOGGER.log(Level.INFO, "La venta "+venta.getCodigo()+" se ha anañadido al historico");
         }
 
@@ -383,10 +401,102 @@ public class Tienda {
             if (venta.getCodigo().equals(codigo)) {
 
                 iterador.remove();
+                escribirHistoricoVentas();
                 return;
             }
         }
         throw new EliminarVentaException("La venta no existe, por lo tanto no se puede eliminar");
+    }
+
+
+    //metodos para serializar
+
+    //metodos para escribir serializacion
+    public void escribirCliente(){
+        try {
+            ArchivoUtils.serializarObjeto("src/main/resources/persistencia/clientes.ser", lstCliente);
+        } catch (IOException e) {
+            LOGGER.log(Level.SEVERE,e.getMessage());
+        }
+    }
+
+    public void escribirProducto()
+    {
+        try {
+            ArchivoUtils.serializarObjeto("src/main/resources/persistencia/productos.ser", lstProducto);
+        } catch (IOException e) {
+            LOGGER.log(Level.SEVERE,e.getMessage());
+        }
+    }
+
+    public void escribirVenta()
+    {
+        try {
+            ArchivoUtils.serializarObjeto("src/main/resources/persistencia/ventas.ser", lstVenta);
+        } catch (IOException e) {
+            LOGGER.log(Level.SEVERE,e.getMessage());
+        }
+    }
+
+    public void escribirHistoricoVentas()
+    {
+        try {
+            ArchivoUtils.serializarObjeto("src/main/resources/persistencia/historicoVentas.ser", historicoventas);
+        } catch (IOException e) {
+            LOGGER.log(Level.SEVERE,e.getMessage());
+        }
+    }
+
+    public void escribirInventario()
+    {
+        try {
+            ArchivoUtils.serializarObjeto("src/main/resources/persistencia/inventario.ser", inventario);
+        } catch (IOException e) {
+            LOGGER.log(Level.SEVERE,e.getMessage());
+        }
+    }
+
+
+
+    //metodos para leer serializacion
+    public void leerClienteSerializable(){
+        try{
+            this.lstCliente = (HashMap<String, Cliente>) ArchivoUtils.deserializarObjeto("src/main/resources/persistencia/clientes.ser");
+        } catch (IOException | ClassNotFoundException e) {
+            LOGGER.log(Level.SEVERE, e.getMessage());
+        }
+    }
+
+    public void leerProductoSerializable(){
+        try{
+            this.lstProducto = (HashMap<String, Producto>) ArchivoUtils.deserializarObjeto("src/main/resources/persistencia/productos.ser");
+        } catch (IOException | ClassNotFoundException e) {
+            LOGGER.log(Level.SEVERE, e.getMessage());
+        }
+    }
+
+    public void leerVentaSerializable(){
+        try{
+            this.lstVenta = (ArrayList<Venta>) ArchivoUtils.deserializarObjeto("src/main/resources/persistencia/ventas.ser");
+        } catch (IOException | ClassNotFoundException e) {
+            LOGGER.log(Level.SEVERE, e.getMessage());
+        }
+    }
+
+    public void leerHistoricoeSerializable(){
+        try{
+            this.historicoventas = (LinkedList<Venta>) ArchivoUtils.deserializarObjeto("src/main/resources/persistencia/historicoVentas.ser");
+        } catch (IOException | ClassNotFoundException e) {
+            LOGGER.log(Level.SEVERE, e.getMessage());
+        }
+    }
+
+    public void leerInventarioSerializable(){
+        try{
+            this.inventario = (TreeSet<Producto>) ArchivoUtils.deserializarObjeto("src/main/resources/persistencia/inventario.ser");
+        } catch (IOException | ClassNotFoundException e) {
+            LOGGER.log(Level.SEVERE, e.getMessage());
+        }
     }
 
 

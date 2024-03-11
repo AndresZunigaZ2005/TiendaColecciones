@@ -75,6 +75,7 @@ public class RegistroUsuarioController implements Initializable {
             alert.setHeaderText(null);
             alert.setContentText("El usuario ha sido creada correctamente");
             alert.showAndWait();
+
         } catch (ExistenciaClienteException | RegistroClienteException e) {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");

@@ -77,7 +77,7 @@ public class ventanaAgregarProductoNuevoController {
     @FXML
     void irAtras(ActionEvent event) throws IOException {
         //TODO cual ventana se va hacia atras
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/ventana.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Ventanas/ventanaInventario.fxml"));
         Parent root = loader.load();
 
         // Crear una nueva escena

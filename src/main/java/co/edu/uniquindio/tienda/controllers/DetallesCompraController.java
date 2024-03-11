@@ -96,7 +96,7 @@ public class DetallesCompraController implements Initializable {
 
 
 
-        //cBoxProductos.getItems().addAll(tienda.getLstProducto().values());
+        cBoxProductos.getItems().addAll(tienda.getLstProducto().values());
 
 
         // Crear un SpinnerValueFactory con los límites del 1 al 100
