@@ -167,11 +167,20 @@ public class Tienda {
      * @throws obtenerProductoNotFoundException
      */
     public void agregarProductoNuevo(String codigo , String nombre , Double precio , int cantidad) throws AgregarProductoNuevoException, obtenerProductoNotFoundException {
+
         if( codigo.isBlank() || codigo == "" || nombre.isBlank() || nombre == "" || precio < 0 || cantidad <0)
         {
+            System.out.println("ENtro al if");
             throw new AgregarProductoNuevoException("Error al agregar, revise nuevamente");
         }
-        else if(obtenerProducto(codigo) == null) {
+        else if(isContenido(codigo)) {
+            Producto producto = obtenerProducto(codigo);
+            producto.setCantidad(producto.getCantidad()+cantidad);
+            lstProducto.put(codigo, producto);
+            LOGGER.log(Level.INFO, "El producto "+codigo+" se ha creado");
+
+        }
+            else{
             Producto nuevoProducto = Producto.builder()
                     .codigo(codigo)
                     .nombre(nombre)
@@ -181,12 +190,6 @@ public class Tienda {
             lstProducto.put(codigo, nuevoProducto);
             escribirProducto();
             LOGGER.log(Level.INFO, "El producto de codigo "+codigo+" se ha sumado a la ");
-        }
-            else{
-                Producto producto = obtenerProducto(codigo);
-                producto.setCantidad(producto.getCantidad()+cantidad);
-                lstProducto.put(codigo, producto);
-            LOGGER.log(Level.INFO, "El producto "+codigo+" se ha creado");
             }
         }
 
@@ -201,6 +204,14 @@ public class Tienda {
             return lstProducto.get(codigo);
         }
         throw new obtenerProductoNotFoundException("El producto no existe");
+    }
+
+    public boolean isContenido (String codigo) {
+        if(lstProducto.containsKey(codigo)){
+            return true;
+        }
+        return false;
+
     }
 
 

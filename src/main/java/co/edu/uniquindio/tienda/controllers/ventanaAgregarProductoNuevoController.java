@@ -59,6 +59,7 @@ public class ventanaAgregarProductoNuevoController {
         int cantidad = Integer.parseInt(txtCantidad.getText());
 
         try {
+            System.out.println("holaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
             tienda.agregarProductoNuevo(codigo,nombre,precio,cantidad);
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
             alert.setTitle("Confirmación");
