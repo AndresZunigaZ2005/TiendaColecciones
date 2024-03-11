@@ -37,7 +37,13 @@ public class Tienda {
     private static Tienda tienda;
 
 
-
+    public String prntHash(){
+        String msj = "";
+        for (Map.Entry<String, Producto> entry : lstProducto.entrySet()){
+            msj += "Clave: " + entry.getKey() + " Valor: " + entry.getValue();
+        }
+        return msj;
+    }
 
     private Tienda(){
         try {
@@ -167,8 +173,7 @@ public class Tienda {
      * @throws obtenerProductoNotFoundException
      */
     public void agregarProductoNuevo(String codigo , String nombre , Double precio , int cantidad) throws AgregarProductoNuevoException, obtenerProductoNotFoundException {
-
-        if( codigo.isBlank() || codigo == "" || nombre.isBlank() || nombre == "" || precio < 0 || cantidad <0)
+        if(codigo.isBlank() || codigo == "" || nombre.isBlank() || nombre == "" || precio < 0 || cantidad <0)
         {
             System.out.println("ENtro al if");
             throw new AgregarProductoNuevoException("Error al agregar, revise nuevamente");
@@ -178,9 +183,10 @@ public class Tienda {
             producto.setCantidad(producto.getCantidad()+cantidad);
             lstProducto.put(codigo, producto);
             LOGGER.log(Level.INFO, "El producto "+codigo+" se ha creado");
+            LOGGER.log(Level.INFO,"La lista es" + tienda.prntHash());
 
         }
-            else{
+        else{
             Producto nuevoProducto = Producto.builder()
                     .codigo(codigo)
                     .nombre(nombre)
@@ -190,6 +196,7 @@ public class Tienda {
             lstProducto.put(codigo, nuevoProducto);
             escribirProducto();
             LOGGER.log(Level.INFO, "El producto de codigo "+codigo+" se ha sumado a la ");
+            LOGGER.log(Level.INFO,"La lista es" + tienda.prntHash());
             }
         }
 

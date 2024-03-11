@@ -64,7 +64,7 @@
                         <TextField fx:id="txtBuscarPorID" layoutX="36.0" layoutY="120.0" />
                         <TextField fx:id="txtCantidad" layoutX="36.0" layoutY="200.0" />
                         <Button fx:id="btnAniadir" layoutX="88.0" layoutY="250.0" mnemonicParsing="false" text="Añadir" />
-                        <TableView layoutX="214.0" layoutY="16.0" prefHeight="260.0" prefWidth="546.0">
+                        <TableView fx:id="TbProductos" layoutX="214.0" layoutY="16.0" prefHeight="260.0" prefWidth="546.0">
                           <columns>
                             <TableColumn fx:id="tcIdProductoVenta" prefWidth="163.99998474121094" text="ID" />
                             <TableColumn fx:id="tcNombreProductoVenta" prefWidth="266.4000244140625" text="Nombre producto" />
@@ -72,7 +72,7 @@
                           </columns>
                         </TableView>
                         <Line endX="645.7999877929688" layoutX="115.0" layoutY="312.0" startX="-100.0" />
-                        <TableView layoutX="36.0" layoutY="336.0" prefHeight="200.0" prefWidth="450.0">
+                        <TableView fx:id="TbProductosAgregados" layoutX="36.0" layoutY="336.0" prefHeight="200.0" prefWidth="450.0">
                           <columns>
                             <TableColumn fx:id="tcIdProductoAnadido" prefWidth="82.39999771118164" text="ID" />
                             <TableColumn fx:id="tcNombreProductoAnadido" prefWidth="152.7999038696289" text="Nombre producto" />

@@ -38,7 +38,7 @@ public class ModelFactoryController implements IModelFactoryControllerService {
 
     @Override
     public TreeSet<Producto> obtenerInvetario() {
-        return null;
+        return Tienda.getInstance().getInventario();
     }
 
     @Override
@@ -64,5 +64,8 @@ public class ModelFactoryController implements IModelFactoryControllerService {
     }
     private ModelFactoryController() {
         System.out.println("Invocación clase singleton");
+    }
+    public String prtList(){
+        return tienda.prntHash();
     }
 }
